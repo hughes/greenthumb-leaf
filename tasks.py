@@ -7,6 +7,7 @@ sender.setup('greenthumb')
 
 @app.task
 def photoresistor():
+    # todo: calibration
     import RPi.GPIO as GPIO, time
     GPIO.setmode(GPIO.BCM)
 
@@ -23,7 +24,6 @@ def photoresistor():
         return reading
 
     result = RCtime(18)
-    print result
     event.Event('sensor', {'name': 'photoresistor', 'value': result})
     return result
 
