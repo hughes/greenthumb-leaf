@@ -24,7 +24,7 @@ def photoresistor():
 
     result = RCtime(18)
     print result
-    event.Event('sensor', {'name': 'photodiode', 'value': result})
+    event.Event('sensor', {'name': 'photoresistor', 'value': result})
     return result
 
 @app.task
