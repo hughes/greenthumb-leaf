@@ -1,4 +1,4 @@
-# ![](./logo_sm.svg =100x) greenthumb-leaf
+# <img src="./logo_sm.svg" width="111" height="100"> greenthumb-leaf
 
 This is the segment of the greenthumb project that runs on a raspberry pi.
 
